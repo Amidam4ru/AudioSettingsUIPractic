@@ -26,7 +26,7 @@ public class SoundsToggle : MonoBehaviour
 
     private void OnDisable()
     {
-        _button.onClick.AddListener(Switch);
+        _button.onClick.RemoveListener(Switch);
     }
 
     private void Switch()
